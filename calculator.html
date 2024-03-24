@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title></title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+<body>
+
+    <div class="calculatorBody">
+        <div class="upper">
+            <div id="display"></div>
+        </div>
+        <div class="lower">
+            <div class="data row-cols-4">
+                <div class="col button aboveColor" onclick="clearDisplay()">C</div>
+                <div class="col button aboveColor" onclick="clearDisplay()">Del</div>
+                <div class="col button aboveColor" onclick="getOperator()">%</div>
+                <div class="col button sideColor" onclick="getOperator()">/</div>
+                <div class="col button"onclick="getNumber(9)">9</div>
+                <div class="col button"onclick="getNumber(8)">8</div>
+                <div class="col button"onclick="getNumber(7)">7</div>
+                <div class="col button sideColor" onclick="getOperator('*')">X</div>
+                <div class="col button"onclick="getNumber(6)">6</div>
+                <div class="col button"onclick="getNumber(5)">5</div>
+                <div class="col button"onclick="getNumber(4)">4</div>
+                <div class="col button sideColor" onclick="getOperator('-')">-</div>
+                <div class="col button"onclick="getNumber(3)">3</div>
+                <div class="col button"onclick="getNumber(2)">2</div>
+                <div class="col button"onclick="getNumber(1)">1</div>
+                <div class="col button sideColor"onclick="getOperator('+')">+</div>
+                <div class="col button"onclick="getNumber(0)">0</div>
+                <div class="col button" onclick="getNumber('.')">.</div>
+                <div class="col button sideColor"onclick="calculateEquals()">=</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="calculator.js"></script>
+    
+</body>
+</html>
